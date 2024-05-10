@@ -1,0 +1,67 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background-color: rgba(29, 26, 26, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+.modal-card{
+   display: flex;
+   flex-direction: column;
+   width: 450px;
+   border-radius: 8px;
+   background-color: #fff;
+}
+.modal-card>p{
+    font-size: 14px;
+    color: rgb(192, 190, 190);
+    margin-left: 20px;
+}
+.modal-card>h3{
+    margin-left: 20px;
+}
+.modalImg{
+    width: 100%;
+    height: 200px;
+}
+.authorInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+    margin-left: 20px;
+}
+.authorInfo>img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.authorInfo>p{
+    font-size: 14px;
+    color: rgb(202, 195, 195);
+}
+.closeDiv{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.closeDiv>img{
+    width:15px;
+    height: 15px;
+    cursor: pointer;
+}
+.closeModal{
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+   .modal-card{
+     width:300px;
+   }
+  }
